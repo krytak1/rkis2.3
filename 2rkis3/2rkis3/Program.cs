@@ -323,8 +323,8 @@ class Program
                 var taskToComplete = db.Tasks.FirstOrDefault(task => task.Id == taskNumber);
                 if (taskToComplete != null)
                 {
-                    taskToComplete.Iscompleted = true; // Помечаем задачу как выполненную
-                    db.SaveChanges(); // Сохраняем изменения в базе данных
+                    taskToComplete.Iscompleted = true; 
+                    db.SaveChanges(); 
                     Console.WriteLine("Задача помечена выполненной.");
                 }
                 else
