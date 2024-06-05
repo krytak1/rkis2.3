@@ -175,7 +175,7 @@ class Program
             Console.ReadLine();
         }
 
-// Просмотр выполненных задач
+// Просмотр выполненных задач   
         static void viemComletedTasks()
         {
             var completedTasks = db.Tasks.Where(task => task.Iscompleted == true).ToList();
