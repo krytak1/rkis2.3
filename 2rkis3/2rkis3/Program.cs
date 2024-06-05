@@ -297,8 +297,7 @@ class Program
         static void markTaskCompleted()
         {
             Console.WriteLine("Выберите задачу для отметки задачи выполненной:");
-    
-            // Выводим список всех задач
+            
             DisplayTasks();
 
             int taskNumber;
@@ -321,7 +320,6 @@ class Program
             }
             else
             {
-                // Пытаемся найти задачу по введенному номеру
                 var taskToComplete = db.Tasks.FirstOrDefault(task => task.Id == taskNumber);
                 if (taskToComplete != null)
                 {
